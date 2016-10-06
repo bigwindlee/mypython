@@ -1,1 +1,1 @@
-# mypython
+Learning python with exercise
