@@ -28,6 +28,6 @@ for (dirname, subshere, fileshere) in os.walk(dstdir):
         
 allsizes.sort(reverse = True)
 
+width = len(str(allsizes[0][0]))  # Specify width at runtime
 for item in allsizes[:topcount]:
-    print('%d\t%s' % (item[0], item[1]))
-    
+    print('%*d\t%s' % (width, item[0], item[1]))
